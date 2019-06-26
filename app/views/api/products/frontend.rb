@@ -12,12 +12,12 @@ while true
   input_choice = gets.chomp
   if input_choice == "1"
     response = HTTP.get("http://localhost:3000/api/one_product_url")
-    contact = response.parse
-    pp contact
+    product = response.parse
+    pp product
   elsif input_choice == "2"
     response = HTTP.get("http://localhost:3000/api/all_products_url")
-    contacts = response.parse
-    pp contacts
+    products = response.parse
+    pp products
   elsif input_choice == "q"
     puts "Goodbye!"
     break
