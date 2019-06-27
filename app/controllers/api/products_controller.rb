@@ -1,21 +1,23 @@
 class Api::ProductsController < ApplicationController
-  def all_products_method
+  def index
     @products = Product.all
-    render "products.json.jb"
+    render "index.json.jb"
   end
 
-  def first_product_method
-    @product = Product.first
-    render "one_product.json.jb"
+  def show
+    @product = Product.find_by(id: params["id"].to_i)
+    render "show.json.jb"
   end
 
-  def second_product_method
-    @product = Product.second
-    render "one_product.json.jb"
-  end
-
-  def third_product_method
-    @product = Product.third
-    render "one_product.json.jb"
+  def create
+    @product = Product.new(
+      id: params["id"],
+      name: params["name"],
+      price: params["price"],
+      image_url: params["image_url"],
+      description: params["description"],
+    )
+    @product.save
+    render "show.json.jb"
   end
 end
