@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+<!-- Utilizing Materialize rather than Bootstrap. -->
+
+  <body>
+
+  <link rel="stylesheet" href="index.css">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Crowdfunded</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="show.html">View product</a></li>
+        <li><a href="new.html">Create new product</a></li>
+        <li><a href="edit.html">Edit product</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col s5 m4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://photos.zillowstatic.com/p_e/ISats6eafucu1p1000000000.jpg" class="card-img-top">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+        <p><a href="#">More info</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Downtown duplex<i class="material-icons right">close</i></span>
+        <p>Duplex apartment in Wrigleyville. Excellent neighborhood near bars and restaurants. Property is well below market and presents an excellent opportunity for investment. Cash flow $150/door per month.</p>
+      </div>
+    </div>
+    <div class="col s5 m4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://americanpolicy.org/wp-content/uploads/2019/03/single-family-home-3.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+        <p><a href="#">More info</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Single family home at an excellent price<i class="material-icons right">close</i></span>
+        <p>Three bed two bath house newly renovated. Walking distance of a vibrant downtown. Excellent investment opportunity in an up and coming commnity.</p>
+      </div>
+    </div>
+    <div class="col s5 m4">
+      <p class="z-depth-3"></p>
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://i.pinimg.com/originals/27/f1/14/27f11467bc1f44aa58ef9a2fca88713a.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+        <p><a href="#">More info</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Renovated fourplex in a great neighborhood<i class="material-icons right">close</i></span>
+        <p>Join the crowdfunding on this Spanish style fourplex. The property is in a great neighborhood near excellent public schools. Cash flow of $200/month per unit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Input</label>
+        </div>
+      </div>
+    </form>
+  </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

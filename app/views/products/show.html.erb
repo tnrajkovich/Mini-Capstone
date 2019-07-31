@@ -1,0 +1,6 @@
+<h1>Product information</h1>
+<h2><%= @product.name %></h2>
+<h3><%= @product.price %></h3>
+<p><%= @product.description %></p>
+<a href="/products">See all products</a>
+<a href="/products/<%= @product.id %>" data-method="delete" rel="nofollow">Delete</a>

@@ -1,0 +1,21 @@
+<h1>New product</h1>
+<form action="/products/<%= @product.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  <div>
+    Price: <input type="text" name="price">
+  </div>
+  <div>
+    Description: <input type="text" name="description">
+  </div>
+  <div>
+  Supplier:
+  <select id="simple" name="simple">
+    <option id=1>Amazon</option>
+    <option id=2>Walmart</option>
+</select>
+</div>
+  <input type="submit" value="Submit">
+</form>

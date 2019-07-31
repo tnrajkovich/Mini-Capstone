@@ -1,0 +1,20 @@
+<h1>Edit product</h1>
+<form action="/products" method="post">
+  <div>
+    Name: <input type="text" name="Name" value="<%= @product.name %>">
+  </div>
+  <div>
+    Price: <input type="text" name="Price" value="<%= @product.price %>">
+  </div>
+  <div>
+    Description: <input type="text" name="Description" value="<%= @product.description %>">
+  </div>
+  <div>
+  <select id="simple" name="simple">
+    Supplier
+    <option id=1>Amazon</option>
+    <option id=2>Walmart</option>
+</select>
+</div>
+  <input type="submit" value="Update product">
+</form>

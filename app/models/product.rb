@@ -16,7 +16,11 @@ class Product < ApplicationRecord
   #   Image.where(product_id: self.id)
   # end
 
-  has_many :orders
+  has_many :orders, through: :carted_product
+
+  belongs_to :category
+
+  has_many :carted_products
 
   def is_discounted?
     if price < 500000
@@ -34,5 +38,13 @@ class Product < ApplicationRecord
   def total
     total = price + tax
     return total
+  end
+
+  def image_url
+    if images.length > 0 && images[0].url
+      images[0].url
+    else
+      "https://www.hutchinsontires.com/helpers/img/no_image.jpg"
+    end
   end
 end

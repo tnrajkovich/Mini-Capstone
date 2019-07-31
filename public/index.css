@@ -1,0 +1,13 @@
+body {
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  background-image: url('ravenna.png')
+}
+
+p {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 3em;
+}

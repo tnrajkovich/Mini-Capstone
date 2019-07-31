@@ -1,0 +1,10 @@
+body {
+  margin: 50;
+  padding: 25;
+  background-image: url('ravenna.png');
+}
+
+.container < row {
+  margin: 50;
+  padding: 25;
+}

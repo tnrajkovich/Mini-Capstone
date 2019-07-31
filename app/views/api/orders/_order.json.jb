@@ -2,10 +2,8 @@
 {
 
   user_id: current_user.id,
-  product_id: order.product_id,
-  quantity: order.quantity,
-  subtotal: order.subtotal,
-  tax: order.tax,
-  total: order.total,
+  subtotal: calculated_subtotal,
+  tax: calculated_tax,
+  total: calculated_total,
 
 }
